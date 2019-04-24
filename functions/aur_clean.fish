@@ -3,7 +3,7 @@ function aur_clean
     return 1
   end
 
-  for path in src pkg *.tar.* LICENSE
+  for path in src pkg *.tar.* LICENSE *.pacman
     rm -rf $path
   end
 end
